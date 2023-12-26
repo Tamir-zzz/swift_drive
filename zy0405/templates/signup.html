@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Arise Admin Panel" />
+		<meta name="keywords" content="Admin, Dashboard, Bootstrap3, Sass, transform, CSS3, HTML5, Web design, UI Design, Responsive Dashboard, Responsive Admin, Admin Theme, Best Admin UI, Bootstrap Theme, Themeforest, Bootstrap" />
+		<meta name="author" content="Ramji" />
+		<link rel="shortcut icon" href="/staticimg/fav.png">
+		<title>Arise Admin Panel </title>
+		
+		<!-- Bootstrap CSS -->
+		<link href="/static/css/bootstrap.min.css"  rel="stylesheet" media="screen" />
+
+		<!-- Error CSS -->
+		<link href="/static/css/login.css"  rel="stylesheet" media="screen">
+
+		<!-- Animate CSS -->
+		<link href="/static/css/animate.css"  rel="stylesheet" media="screen">
+
+		<!-- Ion Icons -->
+		<link href="/static/fonts/icomoon/icomoon.css"  rel="stylesheet" />
+		<style>
+			.sign{
+				height: 50px;
+				width: 85%;
+				background-color: #E84234;
+				/* marrign-left: 10%; */
+				border: 0px;
+				margin-left: 7.5%;
+				
+			}
+			.sign:hover{
+				background-color:#C32619;
+			}
+			.sign a{
+				font-size: 17px;
+				color: #fff;
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="{%url 'zy405:signupaction'%}" id="wrapper" method="post">
+			<div id="box" class="animated bounceIn">
+				<div id="top_header">
+					<!-- <img src="/static/img/logo.png"  alt="Arise Admin Dashboard Logo" /> -->
+					<h5>
+						Sign up to access to your<br />
+						OpenStack Swift.
+					</h5>
+				</div>
+				<div id="inputs">
+					<div class="form-block">
+						<input type="text" placeholder="User Name" name="username" >
+						<i class="icon-user"></i>
+					</div>
+					<div class="form-block">
+						<input type="email" placeholder="Email" name="email">
+						<i class="icon-at"></i>
+					</div>
+					<div class="form-block">
+						<input type="password" placeholder="Password" name="passwd">
+						<i class="icon-eye4"></i>
+					</div>
+					<input type="submit" value="Sign Up">
+					<button class="sign" value="Sign Up">
+						<a href="{%url 'zy405:login'%}">log In</a>
+					</button>
+				</div>
+			</div>
+		</form>
+	</body>
+</html>

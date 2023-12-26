@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Arise Admin Panel" />
+		<meta name="keywords" content="Admin, Dashboard, Bootstrap3, Sass, transform, CSS3, HTML5, Web design, UI Design, Responsive Dashboard, Responsive Admin, Admin Theme, Best Admin UI, Bootstrap Theme, Themeforest, Bootstrap" />
+		<meta name="author" content="Ramji" />
+		<link rel="shortcut icon" href="/static/img/fav.png">
+		<title>Swift </title>
+		
+		<!-- Error CSS -->
+		<link href="{% static '/css/login.css' %}"  rel="stylesheet" media="screen">
+
+		<!-- Animate CSS -->
+		<link href="/static/css/animate.css"  rel="stylesheet" media="screen">
+
+		<!-- Ion Icons -->
+		<link href="/static/fonts/icomoon/icomoon.css"  rel="stylesheet" />
+
+		<style>
+			.sign{
+				height: 50px;
+				width: 85%;
+				background-color: #E84234;
+				/* marrign-left: 10%; */
+				border: 0px;
+				margin-left: 7.5%;
+				
+			}
+			.sign:hover{
+				background-color:#C32619;
+			}
+			.sign a{
+				font-size: 17px;
+				color: #fff;
+				text-decoration: none;
+			}
+		</style>
+
+	</head>
+	<body>
+		<!-- ####################  修改 路径  ################ -->
+		<form action="{%url 'zy405:logincheck'%}" id="wrapper" method="post">
+			<div id="box" class="animated bounceIn">
+				<div id="top_header">
+					<!-- <img src="/static/img/logo.png"  alt="Swift Logo" /> -->
+					<h5>
+						Log in to access to your<br />
+						OpenStack Swift.
+					</h5>
+				</div>
+				<div id="inputs">
+					<div class="form-block">
+						<input type="text" placeholder="Username" name="username">
+						<i class="icon-user-check"></i>
+					</div>
+					<div class="form-block">
+						<input type="password" placeholder="Password" name="passwd">
+						<i class="icon-spell-check"></i>
+					</div>
+					<input type="submit" value="log In">
+					<button class="sign" value="Sign Up">
+						<a href="{%url 'zy405:signup'%}">Sign Up</a>
+					</button>
+				</div>
+				<div id="bottom" class="clearfix">
+					<div class="pull-right">
+						<label class="switch pull-right">
+							<input type="checkbox" class="switch-input" checked>
+							<span class="switch-label" data-on="Yes" data-off="No"></span>
+							<span class="switch-handle"></span>
+						</label>
+					</div>
+					<div class="pull-right">
+						<span class="cb-label">Remember</span>
+					</div>
+				</div>
+			</div>
+		</form>
+	</body>
+</html>

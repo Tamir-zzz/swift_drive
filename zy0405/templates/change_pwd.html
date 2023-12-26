@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Arise Admin Panel" />
+		<meta name="keywords" content="Admin, Dashboard, Bootstrap3, Sass, transform, CSS3, HTML5, Web design, UI Design, Responsive Dashboard, Responsive Admin, Admin Theme, Best Admin UI, Bootstrap Theme, Themeforest, Bootstrap" />
+		<meta name="author" content="Ramji" />
+		<link rel="shortcut icon" href="/staticimg/fav.png">
+		<title>Arise Admin Panel </title>
+		
+		<!-- Bootstrap CSS -->
+		<link href="/static/css/bootstrap.min.css"  rel="stylesheet" media="screen" />
+
+		<!-- Error CSS -->
+		<link href="/static/css/login.css"  rel="stylesheet" media="screen">
+
+		<!-- Animate CSS -->
+		<link href="/static/css/animate.css"  rel="stylesheet" media="screen">
+
+		<!-- Ion Icons -->
+		<link href="/static/fonts/icomoon/icomoon.css"  rel="stylesheet" />
+		
+	</head>
+	<body>
+		<form action="{%url 'zy405:changepwdaction'%}" id="wrapper" method="post">
+			<div id="box" class="animated bounceIn">
+				<div id="top_header">
+					<img src="/static/img/logo.png"  alt="Arise Admin Dashboard Logo" />
+					<h5>
+						Sign up to access to your<br />
+						OpenStack Swift.
+					</h5>
+				</div>
+				<div id="inputs">
+					<div class="form-block">
+						<input type="password" placeholder="original password" name="original_password" >
+						<i class="icon-eye4"></i>
+					</div>
+					<div class="form-block">
+						<input type="password" placeholder="new Password" name="passwd1">
+						<i class="icon-eye4"></i>
+					</div>
+					<div class="form-block">
+						<input type="password" placeholder="again new Password" name="passwd2">
+						<i class="icon-eye4"></i>
+					</div>
+					<input type="submit" value="change password">
+					<!-- <a href="{%url 'zy405:login'%}">Sign In</a> -->
+				</div>
+			</div>
+		</form>
+	</body>
+</html>

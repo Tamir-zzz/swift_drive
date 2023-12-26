@@ -1,0 +1,22 @@
+.chart-horiz ul.chart{width:80%;margin:0;padding:0;list-style-type:none;}
+.chart-horiz ul.chart li{display:block;height:20px;line-height:20px;margin-top:2px;position:relative}
+.chart-horiz ul.chart li:before{font-size: 12px;color:#FFFFFF;content:attr(title);left:5px;position:absolute}
+.chart-horiz ul.chart li.title:before{color:black;font-weight:bold;left:0;margin-top:5px;}
+.chart-horiz ul.chart li:first-child{margin-top:0}
+.chart-horiz ul.chart li .bar{background:#0084B4;height:100%}
+.chart-horiz ul.chart li .number{color:#353535;font-size:15px;padding-left:5px;position:absolute;top:0px}
+.chart-horiz ul.chart li.past .bar{background:#3FC5AC}
+.chart-horiz ul.chart li.past .number{color:#353C48}
+
+ul.sales-bar li:nth-child(1) .bar {
+	background: #E84234;
+}
+ul.sales-bar li:nth-child(2) .bar {
+	background: #F9BB06;
+}
+ul.sales-bar li:nth-child(3) .bar {
+	background: #32AB52;
+}
+ul.sales-bar li:nth-child(4) .bar {
+	background: #4286F7;
+}
